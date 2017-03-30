@@ -24,26 +24,20 @@
     </section>
     <section class="meta-post-header">
       {% if post.date %}
-      <p><span>Published {{ post.date | date_to_string }}</span></p>
+      <p><span>Published on {{ post.date | date_to_string }}</span></p>
       {% endif %}
     </section>
       
     <section class="main-content">
       {{ content }}
-    </section>
     
-    <section class="meta-post-footer">
-      {% if post.tags %}
-      <p><span>Tags: {{ post.tags }}</span></p>
-      {% endif %}
+      <footer class="site-footer">
+        {% if site.github.is_project_page %}
+          <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
+        {% endif %}
+        <span class="site-footer-credits">Created by {{ page.owner }}, using <a href="https://pages.github.com">GitHub Pages</a> and <a href="https://github.com/pages-themes/cayman">Cayman Jakyll Theme</a>.</span>
+      </footer>
     </section>
-
-    <footer class="site-footer">
-      {% if site.github.is_project_page %}
-        <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
-      {% endif %}
-      <span class="site-footer-credits">Created by {{ page.owner }}, using <a href="https://pages.github.com">GitHub Pages</a> and <a href="https://github.com/pages-themes/cayman">Cayman Jakyll Theme</a>.</span>
-    </footer>
 
     {% if site.google_analytics %}
       <script type="text/javascript">
