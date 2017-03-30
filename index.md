@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Home
 ---
 # [](#header-1)List of posts
