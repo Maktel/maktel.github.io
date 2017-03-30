@@ -1,7 +1,8 @@
-name: Marek Łuszczki
+name: Marek Łuszczki's site
 markdown: kramdown
 theme: jekyll-theme-cayman
-title: My new site using Github Pages
+title: Basement of Doom
+description: Marek Łuszczki
 show_downloads: false
 permalink: /blog/:year/:month/:day/:title
 url: https://maktel.github.io
