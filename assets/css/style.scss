@@ -2,6 +2,8 @@
 ---
 
 @import "{{ site.theme }}";
+@import "font-awesome-sprockets";
+@import "font-awesome";
 
 .page-header {
   // background-image: linear-gradient(-90deg, #9600B8, #2AFEFE);
