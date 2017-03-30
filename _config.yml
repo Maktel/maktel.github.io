@@ -1,8 +1,8 @@
 name: Marek Łuszczki's site
 markdown: kramdown
 theme: jekyll-theme-cayman
-title: Basement of Doom
-description: Marek Łuszczki
+title: Marek Łuszczki
+description: Basement of Doom
 show_downloads: false
 permalink: /blog/:year/:month/:day/:title
 url: https://maktel.github.io
