@@ -1,3 +1,9 @@
+---
+title: Bresenham line drawing algorithm in Qt
+categories: [code, qt]
+tags: [programming, qt, bresenham, opengl]
+---
+
 {% gist 264569c2d3794e69af5002beee5649ec %}
 
 
