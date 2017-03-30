@@ -1,2 +1,3 @@
-	name: Marek Łuszczki
-	markdown: kramdown
+name: Marek Łuszczki
+markdown: kramdown
+theme: jekyll-theme-cayman
