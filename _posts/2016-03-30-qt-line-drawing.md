@@ -1,7 +1,8 @@
 ---
-title: Qt line and circle drawing project
-categories: [code, qt]
-tags: [programming, qt, bresenham, opengl]
+theme: post
+title: "Qt line and circle drawing application"
+categories: [qt]
+tags: [qt, c++, bresenham, graphics, opengl]
 ---
 
 [Gist with all files](https://gist.github.com/Maktel/9d344d4e3a10df591566efa211fa4504)
