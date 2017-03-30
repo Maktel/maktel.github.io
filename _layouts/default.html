@@ -25,6 +25,7 @@
     <section class="meta-post-header">
       {% if post.date %}
       <p><span>Published {{ post.date | date_to_string }}</span></p>
+      {% endif %}
     </section>
       
     <section class="main-content">
@@ -34,6 +35,7 @@
     <section class="meta-post-footer">
       {% if post.tags %}
       <p><span>Tags: {{ post.tags }}</span></p>
+      {% endif %}
     </section>
 
     <footer class="site-footer">
