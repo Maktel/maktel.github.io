@@ -2,11 +2,11 @@
 ---
 
 @import "{{ site.theme }}";
-.header-link a {
-  color: #ffffff;
-  text-decoration: none;
+.header-link { 
+  color: #ffffff; 
+  text-decoration: none; 
 }
 
-.header-link a:hover {
-    text-decoration: none;
+.header-link:hover { 
+  text-decoration: none; 
 }
