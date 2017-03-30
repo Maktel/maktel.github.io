@@ -1,8 +1,9 @@
-name: Marek Łuszczki's site
+name: "Marek Łuszczki's site"
 markdown: kramdown
 theme: jekyll-theme-cayman
-title: Marek Łuszczki
-description: Basement of Doom
+title: "Marek Łuszczki"
+description: "Basement of Doom"
 show_downloads: false
 permalink: /blog/:year/:month/:day/:title
 url: https://maktel.github.io
+owner: "Marek Łuszczki"
