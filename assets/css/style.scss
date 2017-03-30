@@ -8,10 +8,10 @@
   background: linear-gradient(-61deg, #9A0090, #2AFEE6);
   background-size: 300% 300%;
 
-  -webkit-animation: AnimationName 13s ease infinite;
-  -moz-animation: AnimationName 13s ease infinite;
-  -o-animation: AnimationName 13s ease infinite;
-  animation: AnimationName 13s ease infinite;
+  -webkit-animation: AnimationName 20s ease infinite;
+  -moz-animation: AnimationName 20s ease infinite;
+  -o-animation: AnimationName 20s ease infinite;
+  animation: AnimationName 20s ease infinite;
 
   @-webkit-keyframes AnimationName {
       0%{background-position:0% 65%}
@@ -50,4 +50,6 @@
 
 .post-meta-header, .post-meta-footer {
   padding: 1.5rem 3rem;
+  max-width: 64rem;
+  margin: 0 auto;
 }
