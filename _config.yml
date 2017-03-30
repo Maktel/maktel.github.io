@@ -4,3 +4,4 @@ theme: jekyll-theme-cayman
 title: My new site using Github Pages
 show_downloads: false
 permalink: /blog/:year/:month/:day/:title
+url: https://maktel.github.io
