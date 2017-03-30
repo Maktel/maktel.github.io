@@ -1,5 +1,5 @@
 ---
-title: Bresenham line drawing algorithm in Qt
+title: Qt line and circle drawing project
 categories: [code, qt]
 tags: [programming, qt, bresenham, opengl]
 ---
