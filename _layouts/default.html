@@ -23,8 +23,8 @@
       {% endif %}
     </section>
     <section class="meta-post-header">
-      {% if post.date %}
-      <p><span>Published on {{ post.date | date_to_string }}</span></p>
+      {% if page.date %}
+      <p><span>Published on {{ page.date | date: "%-d %B %Y" }}</span></p>
       {% endif %}
     </section>
       
