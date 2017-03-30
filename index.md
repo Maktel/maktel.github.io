@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Front page
+title: Home
 ---
 # [](#header-1)List of posts
 
