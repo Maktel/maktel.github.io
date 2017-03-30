@@ -4,4 +4,9 @@
 @import "{{ site.theme }}";
 .header-link {
   color: #ffffff;
+  text-decoration: none;
+}
+
+.header-link:hover {
+    text-decoration: none;
 }
