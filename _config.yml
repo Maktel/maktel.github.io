@@ -7,3 +7,5 @@ show_downloads: false
 permalink: /blog/:year/:month/:day/:title
 url: https://maktel.github.io
 owner: "Marek Łuszczki"
+
+gems: [jekyll_github_sample]
