@@ -6,12 +6,12 @@ tags: [fix, c++, graphics]
 
 # [](#intro)Problem statement
 
-I have been tinkering with my Qt drawing application, adding sliders to control zoom level. After fighting with slots and signals, I have managed to finally make the slider work. Everything worked, except... sometimes app felt unresponsive and slow -- but only when high level of zoom was set. Testing revealed `paintEvent()` function, which in turn calls `image.scaled()`, was to blame.
+I have been tinkering with my Qt drawing application, adding sliders to control zoom level. After fighting with slots and signals, I have managed to finally make the slider work. Everything was fine, except... sometimes app felt unresponsive and slow -- but only when high level of zoom was set. Testing revealed `paintEvent()` function, which in turn calls `image.scaled()`, was to blame.
 
 
 # [](#details)Details
 
-My class responsible for creating window is called with 2 parameters: `const int width` and `const int height`. They don't change through life of the application and are used to set size of the window, as well as an image, which is used by all drawing functions as a canvas (I will use both words interchangeably). Since these parameters are constant, I had to find a way of zooming in the image to see drawing in greater details. Third constant was introduced, `double scale`; `paintEvent()` and `mousePressEvent()` make use of it -- the former to scale canvas down and the latter to correctly register mouse presses on a scaled image.
+Constructor of main class responsible for creating a window takes 2 parameters: `const int width` and `const int height`. They don't change through life of the application and are used to set size of the window, as well as an image, which is used by all drawing functions as a canvas (I will use both "canvas" and "image" interchangeably). Since these parameters are constant, I had to find a way of zooming in the image to see drawing in greater details. So third parameter was introduced, `double scale`; `paintEvent()` and `mousePressEvent()` make use of it -- the former to scale canvas down and the latter to correctly register mouse presses on a scaled image.
 
 Let's take a look at `paintEvent()`:
 
@@ -28,7 +28,7 @@ Basically, every time a widget is changed, moved or resized, `update()` function
 
 # [](solution)Solution
 
-We have established frequent image scalling is a problem that is slowing down application. I can think of several solutions:
+It has been established frequent image scalling is a problem that is slowing down application. I can think of several solutions:
 * **cache drawn image -- scale it only if it has been modified**. It is a solution I have opted for. It required adding only one function and replacing it for previous calls to `update()`.
 
 ```c++
@@ -47,5 +47,5 @@ void MainWindow::paintEvent(QPaintEvent*) {
 }
 ```
 
-* **remove scaling and just resize image**. Probably the best of all, since even after my fix, high zooms don't feel instantaneous like low ones. It should benefit especially when working with gradients, when the image is redrawn often. 
+* **remove scaling and just resize image**. Probably the best of all, since even after my fix, high zooms don't feel instantaneous like low ones. It should be the most beneficial especially when working with gradients, when the image is redrawn often. 
 * **separate slider from drawing functionality** (not sure about that one; may still require other changes)
