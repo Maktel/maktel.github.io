@@ -29,7 +29,7 @@ Basically, every time a widget is changed, moved or resized, `update()` function
 # [](solution)Solution
 
 We have established frequent image scalling is a problem that is slowing down application. I can think of several solutions:
-1. **cache drawn image -- scale it only if it has been modified**. It is a solution I have opted for. It required adding only one function and replacing it for previous calls to `update()`.
+* **cache drawn image -- scale it only if it has been modified**. It is a solution I have opted for. It required adding only one function and replacing it for previous calls to `update()`.
 ```c++
 // . . .
 QImage image_scaled;
@@ -45,5 +45,5 @@ void MainWindow::paintEvent(QPaintEvent*) {
   painter.drawImage(0, 0, image_scaled);
 }
 ```
-2. **remove scaling and just resize image**. Probably the best of all, since even after my fix, high zooms don't feel instantaneous like low ones. It should benefit especially when working with gradients, when the image is redrawn often. 
-3. **separate slider from drawing functionality** (not sure about that one; may still require other changes)
+* **remove scaling and just resize image**. Probably the best of all, since even after my fix, high zooms don't feel instantaneous like low ones. It should benefit especially when working with gradients, when the image is redrawn often. 
+* **separate slider from drawing functionality** (not sure about that one; may still require other changes)
