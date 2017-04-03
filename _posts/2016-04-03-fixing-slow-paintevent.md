@@ -6,7 +6,7 @@ tags: [fix, c++, graphics]
 
 # [](#intro)Problem statement
 
-I have been tinkering with my Qt drawing application, adding sliders to control zoom level. After fighting with slots and signals, I have managed to finally make the slider work. Everything worked, except... sometimes app felt unresponsive and slow -- but only when high level of zoom was set. Testing revealed paintEvent() function, which in turn calls image.scaled(), was to blame.
+I have been tinkering with my Qt drawing application, adding sliders to control zoom level. After fighting with slots and signals, I have managed to finally make the slider work. Everything worked, except... sometimes app felt unresponsive and slow -- but only when high level of zoom was set. Testing revealed `paintEvent()` function, which in turn calls `image.scaled()`, was to blame.
 
 
 # [](#details)Details
