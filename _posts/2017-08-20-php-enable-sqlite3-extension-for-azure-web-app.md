@@ -33,6 +33,6 @@ To check whether interpreter version you are using supports SQLite3, you can do 
 If you didn't find the .dll file, you can try finding it on the internet, uploading it to your app with FTP (for instance to `/site/bin/`) and pointing `settings.ini` to this directory.
 
 # [](#why)Why would you want to do this?
-I was looking for a quick way to store information in a database for a small PHP project. Full blown database seemed to be an overkill, since my project used file storage with much success. I have learnt about the built-in\* database and happily wrote my code with local PHP development server. After deployment it turned out Azure didn't support it out of the box, so instead of using different, universal database solution, I spent two hours trying to configure environment. It was worth it
+I was looking for a quick way to store information in a database for a small PHP project. Full blown database seemed to be an overkill, since my project used file storage with much success. I have learnt about the built-in\* database and happily wrote my code with local PHP development server. After deployment it turned out Azure didn't support it out of the box, so instead of using different, universal database solution, I spent two hours trying to configure environment. It was worth it.
 
 __\*__ by built-in I mean `sudo apt install php-sqlite3`
