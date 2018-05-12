@@ -264,6 +264,8 @@ int main() {
   shapes[2] = new Circle(p3, 10);
   
   f(shapes, size, "shape");
+  
+  delete[] shapes;
 
   return 0;
 }
