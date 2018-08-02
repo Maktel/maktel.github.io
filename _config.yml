@@ -12,17 +12,30 @@ github_url: https://github.com/Maktel
 prose:
   metadata:
     _posts:
-      - name: "layout"
+      - name: "theme"
         field:
           element: "hidden"
-          value: "blog"
+          value: "post"
+      - name: "title"
+      	field:
+          element: "text"
+          type: "text"
       - name: "tags"
         field:
           element: "multiselect"
           label: "Add Tags"
           placeholder: "Choose Tags"
+          alterable: true
+      - name: "categories"
+        field:
+          element: "multiselect"
+          label: "Add Categories"
+          placeholder: "Choose Categories"
+          alterable: true
           options:
-            - name: "Apples"
-              value: "apples"
-            - name: "Bananas"
-              value: "bananas"
+            - name: "Linux"
+              value: "linux"
+            - name: "ReactJS"
+              value: "reactjs"
+            - name: "Javascript"
+              value: "javascript"
