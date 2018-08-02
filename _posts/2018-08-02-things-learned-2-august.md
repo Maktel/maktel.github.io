@@ -2,6 +2,10 @@
 theme: post
 published: true
 title: Things learned – 2 August
+categories:
+  - reactjs
+tags:
+  - react
 ---
 ### React's setState is asynchronous
 #### Value
@@ -38,3 +42,6 @@ component.setState(
 );
 console.log('first', this.state.counter); // old value
 ```
+
+### mapDispatchToProps()
+https://stackoverflow.com/questions/39419237/what-is-mapdispatchtoprops
