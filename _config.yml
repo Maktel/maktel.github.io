@@ -10,9 +10,19 @@ owner: "Marek Łuszczki"
 github_url: https://github.com/Maktel
 
 prose:
-	metadata:
-    	_posts:
-			- name: "theme"
-            field:
-				element: "hidden"
-				value: "post"
+  metadata:
+    _posts:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "blog"
+      - name: "tags"
+        field:
+          element: "multiselect"
+          label: "Add Tags"
+          placeholder: "Choose Tags"
+          options:
+            - name: "Apples"
+              value: "apples"
+            - name: "Bananas"
+              value: "bananas"
