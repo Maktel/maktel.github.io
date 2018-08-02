@@ -45,3 +45,7 @@ console.log('first', this.state.counter); // old value
 
 ### mapDispatchToProps()
 https://stackoverflow.com/questions/39419237/what-is-mapdispatchtoprops
+
+### Immutability
+https://github.com/kolodny/immutability-helper
+https://github.com/facebook/immutable-js –Facebook's library providing immutable types
