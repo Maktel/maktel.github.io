@@ -8,3 +8,11 @@ permalink: /blog/:year/:month/:day/:title
 url: https://maktel.github.io
 owner: "Marek Łuszczki"
 github_url: https://github.com/Maktel
+
+prose:
+	metadata:
+    	_posts:
+			- name: "theme"
+            field:
+				element: "hidden"
+				value: "post"
