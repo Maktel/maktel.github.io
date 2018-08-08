@@ -8,3 +8,5 @@ When you are writing a rule in a media query and you want to reference a class t
 
 ### Found something that looks like a solution to component class name problem
 https://simonsmith.io/handling-props-and-class-names-in-react/
+
+### Add whitespace in span in JSX
