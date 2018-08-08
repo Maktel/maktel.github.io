@@ -11,3 +11,4 @@ https://simonsmith.io/handling-props-and-class-names-in-react/
 
 ### Add whitespace in span in JSX
 I wanted to render a `span` with a colon and space as children: `<span>; </span>`. However, it seems like JSX removes the space. I didn't want a non-breaking space (`&nbsp;`), as it would make word-wrapping look bad. I have tried escaping with `": "` or ` `;  ` `, but it didn't work.
+I believe I have settled for `&nbsp;`, but right now using React.createElement seems like a interesting solution which could solve my problem.
