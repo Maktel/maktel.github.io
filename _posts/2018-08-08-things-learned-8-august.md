@@ -10,4 +10,4 @@ When you are writing a rule in a media query and you want to reference a class t
 https://simonsmith.io/handling-props-and-class-names-in-react/
 
 ### Add whitespace in span in JSX
-I wanted to render a `span` with a colon and space as children: `<span>; </span>`. However, it seems like JSX removes the space. I didn't want a non-breaking space (`&nbsp;`), as it would make word-wrapping look bad. I have tried escaping with `": "` or `\`; \``, but it didn't work.
+I wanted to render a `span` with a colon and space as children: `<span>; </span>`. However, it seems like JSX removes the space. I didn't want a non-breaking space (`&nbsp;`), as it would make word-wrapping look bad. I have tried escaping with `": "` or ` `;  ` `, but it didn't work.
