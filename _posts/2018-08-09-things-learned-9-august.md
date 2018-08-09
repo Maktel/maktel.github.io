@@ -22,3 +22,6 @@ Grid layout is way better than flex or any other way to lay out elements. It see
   grid-column-end: 4;
 }
 ```
+
+### React 16 error handling
+https://reactjs.org/blog/2017/07/26/error-handling-in-react-16.html
