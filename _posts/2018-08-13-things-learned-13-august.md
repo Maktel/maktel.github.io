@@ -27,3 +27,4 @@ All these values simple don't render. Expressions below all render to the same t
 <div>{true}</div>
 
 ```
+[source](https://reactjs.org/docs/jsx-in-depth.html#booleans-null-and-undefined-are-ignored)
