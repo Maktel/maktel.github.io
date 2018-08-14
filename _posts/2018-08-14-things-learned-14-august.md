@@ -44,3 +44,11 @@ export class A extends Component {
   }
 }
 ```
+
+Then use as:
+```javascript
+<A>
+  <A.B />
+  <A.C />
+</A>
+```
