@@ -24,7 +24,7 @@ To remove all occurences of a character(s), use regular expression with global m
 Why so complicated? https://medium.com/maxime-heckel/react-sub-components-513f6679abed
 Answer: https://risan.io/react-component-with-dot-notation.html
 
-```javascript
+```jsx
 export class A extends Component {
   static B = props => (
     <div>B</div>
