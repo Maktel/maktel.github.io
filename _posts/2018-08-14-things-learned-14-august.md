@@ -5,7 +5,7 @@ title: Things learned – 14 August
 ---
 ### Sass variables in `calc()`
 In order to use Sass variables in `calc()`, you have to interpolate the name:
-```css
+```sass
 $elem-width: 140px;
 
 body {
@@ -46,7 +46,7 @@ export class A extends Component {
 ```
 
 Then use as:
-```javascript
+```jsx
 <A>
   <A.B />
   <A.C />
