@@ -28,3 +28,7 @@ title: Things learned – 17 August
 * Close all Chromium windows
 * Launch Chromium with `--remote-debugging-port=9222` flag
 * Press F5 to start debugging
+
+### npx for yarn
+The only affiliation of `npx` with `npm` is cache-sharing and apart from that you can use `npx` with any other package manager.
+If you insist on not using `npx`, you can run a executable using yarn with `yarn run bin`. It works if `bin` is in `./node_modules/`.
