@@ -42,6 +42,21 @@ php -S localhost: 3050 # -t /path/to/dir
 npx http-server -p 3050
 ```
 
+Linters and formatters
+```bash
+yarn add --dev prettier eslint-plugin-prettier
+```
+Installed also Prettier and ESLint VSCode extensions. `.eslintrc`:
+```json
+{
+  "extends": "react-app",
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": "error"
+  }
+}
+```
+
 ## Code notes
 
 ### Service workers
@@ -51,4 +66,12 @@ There is a `registerServiceWorker.js` file and `registerServiceWorker()` functio
 As a Webpack extension (or built-in feature, I don't really know), CSS styles can be directly imported into Javascript code (for example in components), coupling one another. Then, you can include `component.css` in a `component.js` and make component standalone.
 
 ## Example, step by step
-First, we start in `index.js`. 
+First, we start in `index.js`. We use `ReactDOM.render(component, DOM_node)` method to render `App` component inside a `div` with an id `root`. This `div` resides in a static `public/index.html` file and can be changed there.
+[ReactDOM](https://reactjs.org/docs/react-dom.html) is often used merely as a mounting point of React components into the browser DOM (aforementioned `.render()` method). It also provides `.findDOMNode(component)`, allowing for direct DOM manipulations (this can be avoided with refs).
+All the necessary imports are here. We also add a CSS file with global styles, `index.css`.
+
+There's really nothing to change in the `index.html`, at least for now. Make sure your root div has id set, so you can relate to it somehow.
+
+### `App.js`
+
+It's time for the main component. I will be using styled-components here instead of existing imported CSS.
