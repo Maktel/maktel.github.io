@@ -1,7 +1,7 @@
 ---
 theme: post
 published: true
-title: Things learned – August 16
+title: Things learned – 16 August
 ---
 ### Tagged template literals
 You can prepend a template literal in Javascript with a tag. This way the function with tag's name will be called with literal as an argument.
