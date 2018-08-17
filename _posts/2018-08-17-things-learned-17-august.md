@@ -6,7 +6,7 @@ title: Things learned – 17 August
 ### Debugging React in Chromium
 * Bootstrap a project using `create-react-app` or any other way
 * Install VSCode _Chrome debugging extension_
-* Add a configuration in `launch.json`
+* Add a configuration in `.vscode/launch.json`
 ```json
 {
   "version": "0.2.0",
