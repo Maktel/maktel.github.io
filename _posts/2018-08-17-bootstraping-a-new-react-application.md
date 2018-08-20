@@ -42,20 +42,17 @@ php -S localhost: 3050 # -t /path/to/dir
 npx http-server -p 3050
 ```
 
-Linters and formatters
+
+Linters and formatters ([loosely following](https://www.robinwieruch.de/react-eslint-webpack-babel/))
+**This doesn't work as expected [SO](https://stackoverflow.com/questions/44690308/whats-the-difference-between-prettier-eslint-eslint-plugin-prettier-and-eslint), [39](https://www.39digits.com/configure-prettier-and-eslint-in-visual-studio-code/)**
 ```bash
-yarn add --dev prettier eslint-plugin-prettier
+yarn add --dev prettier
+yarn add --dev eslint eslint-config-prettier eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react eslint-config-airbnb
 ```
-Installed also Prettier and ESLint VSCode extensions. `.eslintrc`:
-```json
-{
-  "extends": "react-app",
-  "plugins": ["prettier"],
-  "rules": {
-    "prettier/prettier": "error"
-  }
-}
-```
+
+Installed also Prettier and ESLint VSCode extensions. 
+
+**TODO: add updated .prettierrc, .eslintrc**
 
 ## Code notes
 
