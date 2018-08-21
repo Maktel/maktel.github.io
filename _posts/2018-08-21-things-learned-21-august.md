@@ -17,5 +17,5 @@ let operation = {
   arr: {$push: [4, 5, 6]},
 };
 const newData = update(data, operation);
-// -> { foo: 'baz', arr: [ 1, 2, 3, 4, 5, 6 ] }
+// newData -> { foo: 'baz', arr: [ 1, 2, 3, 4, 5, 6 ] }
 ```
