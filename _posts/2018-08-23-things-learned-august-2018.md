@@ -5,8 +5,8 @@ title: Things learned – August 2018
 ---
 # 23 August
 
-### Destructing assignment with rename
-The proper way to rename a variable during destructing assignment is counterintuitive to me:
+### Destructuring assignment with rename
+The proper way to rename a variable during destructuring assignment is counterintuitive to me:
 ```javascript
 const o = { hello: 'world', foo: 123 };
 const { hello, foo: bar } = o;
@@ -17,6 +17,9 @@ const { hello, foo: bar } = o;
 
 ### Node 6 LTS supports almost all features of ES6/ES2015
 [Feature compatibility table](https://node.green/)
+
+### Destructuring assignment
+TIL it's "destructuring" assignment, not "destructing"
 
 ---
 
