@@ -3,6 +3,20 @@ theme: post
 published: true
 title: Things learned – August 2018
 ---
+# 23 August
+
+### Destructing assignment with rename
+The proper way to rename a variable during destructing assignment is counterintuitive to me:
+```javascript
+const o = { hello: 'world', foo: 123 };
+const { hello, foo: bar } = o;
+// hello -> 'world'
+// bar -> 123
+// foo -> undefined
+```
+
+---
+
 # 22 August
 
 ### `Array.prototype.concat` and new shortcut syntax
