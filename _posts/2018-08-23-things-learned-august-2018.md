@@ -15,6 +15,9 @@ const { hello, foo: bar } = o;
 // foo -> undefined
 ```
 
+### Node 6 LTS supports almost all features of ES6/ES2015
+[Feature compatibility table](https://node.green/)
+
 ---
 
 # 22 August
