@@ -3,6 +3,219 @@ theme: post
 published: true
 title: Things learned – August 2018
 ---
+# 22 August
+
+### `Array.prototype.concat` and new shortcut syntax
+
+```javascript
+const arr = ['hello', 'world'];
+const foo = 'bar';
+
+arr.concat(foo);
+// -> [ 'hello', 'world', 'bar' ]
+
+arr.concat([foo]);
+// -> [ 'hello', 'world', 'bar' ]
+
+arr.concat({foo});
+
+// -> [ 'hello', 'world', { foo: 'bar' } ]
+
+arr.concat({baz: foo});
+// -> [ 'hello', 'world', { baz: 'bar' } ]
+```
+
+---
+
+# 21 August
+
+### Returning `null` from first parameter of `setState()` does not trigger re-render
+You can prevent re-renders by returning `null` from the callback in the first parameter of React's `setState()`.
+
+### `immutability-helper` module
+Helps working with immutable data structures like Redux's store. You can find available commands on a [Github page](https://github.com/kolodny/immutability-helper#available-commands). Example of the usage is below. Remember that `$` is a valid character in variable name in Javascript.
+```javascript
+// run in nodejs with immutability-helper module installed
+const update = require('immutability-helper');
+const data = {foo: 'bar', arr: [1, 2, 3]};
+let operation = {
+  foo: {$set: 'baz'}, 
+  arr: {$push: [4, 5, 6]},
+};
+const newData = update(data, operation);
+// newData -> { foo: 'baz', arr: [ 1, 2, 3, 4, 5, 6 ] }
+```
+
+---
+
+# 17 August
+
+### Debugging React in Chromium
+* Bootstrap a project using `create-react-app` or any other way
+* Install VSCode _Chrome debugging extension_
+* Add a configuration in `.vscode/launch.json`
+```json
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Chrome",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceRoot}/src",
+      "sourceMapPathOverrides": {
+        "webpack:///src/*": "${webRoot}/*"
+      },
+      "runtimeExecutable": "/usr/bin/chromium"
+    }
+  ]
+}
+```
+* Close all Chromium windows
+* Launch Chromium with `--remote-debugging-port=9222` flag
+* Press F5 to start debugging
+
+### npx for yarn
+The only affiliation of `npx` with `npm` is cache-sharing and apart from that you can use `npx` with any other package manager.
+If you insist on not using `npx`, you can run a executable using yarn with `yarn run bin`. It works if `bin` is in `./node_modules/`.
+
+### List of npm commands translated into yarn
+[https://yarnpkg.com/en/docs/migrating-from-npm#toc-cli-commands-comparison](https://yarnpkg.com/en/docs/migrating-from-npm#toc-cli-commands-comparison)
+
+---
+
+# 16 August
+
+### Tagged template literals
+You can prepend a template literal in Javascript with a tag. This way the function with tag's name will be called with literal as an argument.
+```javascript
+function foo() { console.log('foo:', arguments); }
+const bar = "Maktel 🕴";
+foo `Hello world, ${bar}!`;
+// -> foo: [Arguments] { '0': [ 'Hello world, ', '!' ], '1': 'Maktel 🕴' }
+```
+
+### Using variables in regular expressions
+To use a variable in regular exporession, you should construct a new `RegExp` object:
+```javascript
+const str = 'hello foo world foo';
+const bar = 'foo';
+str.match(bar); // -> [ 'foo', index: 6, input: 'hello foo world foo', groups: undefined ]
+const re = new RegExp(bar, "g");
+str.match(re); // -> [ 'foo', 'foo' ]
+
+// template literals can be useful
+str.match(new RegExp(` ${bar} `, "g")); // -> [ ' foo ' ]
+```
+
+---
+
+# 14 August
+
+### Sass variables in `calc()`
+In order to use Sass variables in `calc()`, you have to interpolate the name:
+```sass
+$elem-width: 140px;
+
+body {
+  width: calc(100% - 2em - #{$elem-width});
+}
+```
+
+### `.replace()` by default changes only the first occurence
+To remove all occurences of a character(s), use regular expression with global modifier.
+```javascript
+'foo bar foo bar'.replace('foo', 'baz') // -> 'baz bar foo bar'
+'foo bar foo bar'.replace(/foo/g, 'baz') // -> 'baz bar baz bar'
+```
+
+### How to create subcomponent?
+Why so complicated? https://medium.com/maxime-heckel/react-sub-components-513f6679abed
+Answer: https://risan.io/react-component-with-dot-notation.html
+
+```jsx
+export class A extends Component {
+  static B = props => (
+    <div>B</div>
+  );
+
+  static C = props => (
+    <div>C</div>
+  );
+
+  render() {
+    return (
+      <div>A</div>
+      <div>
+        {this.props.children}
+      </div>
+    );
+  }
+}
+```
+
+Then use as:
+```jsx
+<A>
+  <A.B />
+  <A.C />
+</A>
+```
+
+---
+
+# 13 August
+
+### Bindings and arrow functions in render
+You should avoid arrow functions in render
+https://medium.freecodecamp.org/react-pattern-extract-child-components-to-avoid-binding-e3ad8310725e
+
+### Q: Which conditional rendering gives the best performance in JSX?
+https://www.robinwieruch.de/conditional-rendering-react/
+
+### Booleans, `null` and `undefined` are valid and ignored JSX children
+All these values simple don't render. Expressions below all render to the same thing:
+```jsx
+
+<div />
+
+<div></div>
+
+<div>{false}</div>
+
+<div>{null}</div>
+
+<div>{undefined}</div>
+
+<div>{true}</div>
+
+```
+However, expressions that evaluate to false like `0` are still rendered.
+Q: Do `''` fall into the same category?
+[source](https://reactjs.org/docs/jsx-in-depth.html#booleans-null-and-undefined-are-ignored)
+
+---
+
+# 10 August
+
+### CSS Grid layout column problem
+I had a container with 3 divs (one of them, `c`, is empty) and wanted to place them in a following pattern:
+```
+a b
+  c
+```
+It worked just like intended. However, when I tried to change number of columns to `grid-template-columns: 1fr` to force one-column layout, the layout kept 2 columns. Almighty `!important` didn't help either.
+Expected result
+```
+a
+b
+c
+```
+As it turned out, `c` had `grid-column: 2`, which caused layout to add a second column despite `grid-template-columns`.
+
+---
+
 # 9 August
 
 ### Using grid layout
@@ -56,7 +269,7 @@ without a trailing space in inline code block.
 
 ---
 
-## 7 August
+# 7 August
 
 ### Empty arrays and empty objects evaluate to true
 Javascript's objects evaluate to true when put inside a conditional expression (arrays are objects after all). To test if an object is empty (has no own properties), you can either use lodash or other library, or use following snippet:
@@ -83,7 +296,7 @@ I haven't found a good solution for it yet, however I believe callbacks are the 
 
 ---
 
-## 6 August
+# 6 August
 
 ### Node – check if path starts with one of the values from an array
 
@@ -108,7 +321,7 @@ https://stackoverflow.com/questions/20508788/do-i-need-content-type-application-
 
 ---
 
-## 3 August
+# 3 August
 
 ### Commit your changes before doing anything
 It happened at least once to every person using version control – losing their changes. Commit your files, guys!
@@ -148,7 +361,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
 
 ---
 
-## 2 August
+# 2 August
 
 ### React's setState is asynchronous
 #### Value
