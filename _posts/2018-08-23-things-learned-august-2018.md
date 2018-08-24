@@ -3,6 +3,23 @@ theme: post
 published: true
 title: Things learned – August 2018
 ---
+# 24 August
+
+### Disable cancer `jsx-a11y` eslint plugin from airbnb config
+*node_modules/eslint-config-airbnb/index.js*
+```javascript
+module.exports = {
+  extends: [
+    'eslint-config-airbnb-base',
+    'eslint-config-airbnb-base/rules/strict',
+    './rules/react',
+    // './rules/react-a11y', // comment this
+  ].map(require.resolve),
+  rules: {},
+};
+```
+I need to think of a way to disable it premanently xD
+
 # 23 August
 
 ### Destructuring assignment with rename
