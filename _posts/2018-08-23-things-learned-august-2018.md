@@ -3,6 +3,11 @@ theme: post
 published: true
 title: Things learned – August 2018
 ---
+# 28 August
+
+### `String.prototype.slice` return value
+String method `slice(startIndex[, endIndex])` returns an empty string on invalid parameters like start index greater or equal the length of the string oraz start index greater than end index (except for negative end index that matches position from the end of the string). Providing end index after the end of the string does greedy match for the whole string.
+
 # 24 August
 
 ### Disable cancer `jsx-a11y` eslint plugin from airbnb config
