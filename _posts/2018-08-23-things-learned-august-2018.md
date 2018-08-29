@@ -36,7 +36,7 @@ Include conf/extra/httpd-vhosts.conf
     CustomLog "/var/log/httpd/localhost-app-access_log" common
 </VirtualHost>
 ```
-* Create directory `/srv/http/localhost` and place your application there (in the root directory)
+* Create directory `/srv/http/localhost` and place your application there (best in root directory, but can be in any other as well)
 * Run `sudo systemctl restart httpd.service`
 * Open `localhost` in browser
 
