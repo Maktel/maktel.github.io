@@ -24,7 +24,8 @@ LoadModule proxy_http_module modules/mod_proxy_http.so
 ```
 * Open `/etc/httpd/conf/extra/httpd-vhosts.conf` and set configuration like this
 ```
-<VirtualHost *:80>
+Listen 4100
+<VirtualHost *:4100>
 	DocumentRoot "/srv/http/localhost"
 
 	<Proxy *>
