@@ -3,6 +3,40 @@ theme: post
 published: true
 title: Things learned – August 2018
 ---
+# 29 August
+
+### How to create local server with proxy using Apache2
+
+* First, make sure you have `apache` installed. Apache's configuration sits in `/etc/httpd/conf/`.
+* Enable virtual hosts in `/etc/httpd/conf/httpd.conf` – uncomment line below
+```
+# Virtual hosts
+Include conf/extra/httpd-vhosts.conf
+```
+* Open `/etc/httpd/conf/extra/httpd-vhosts.conf` and set configuration like this
+```
+<VirtualHost *:80>
+	DocumentRoot "/srv/http/localhost"
+
+    ProxyPreserveHost Off
+	<Proxy *>
+        Order allow,deny
+        Allow from All
+    </Proxy>
+
+    ProxyPass "/app-base/api/*" "http://ip-to-external-api/api"
+    ProxyPassReverse "/app-base/api/*" "http://ip-to-external-api/api"
+    ProxyPassReverseCookiePath "*" "/app-base/"
+    ProxyPassReverseCookieDomain "*" "/app-base/"
+    
+    ErrorLog "/var/log/httpd/localhost-app-error_log"
+    CustomLog "/var/log/httpd/localhost-app-access_log" common
+</VirtualHost>
+```
+* Create directory `/srv/http/localhost` and place your application there
+* Run `sudo systemctl restart httpd.service`
+* Open `localhost` in browser
+
 # 28 August
 
 ### `String.prototype.slice` return value
