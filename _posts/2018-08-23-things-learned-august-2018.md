@@ -13,6 +13,15 @@ title: Things learned – August 2018
 # Virtual hosts
 Include conf/extra/httpd-vhosts.conf
 ```
+* In the same file enable proxy modules (mod_proxy, mod_proxy_http)
+```
+# Uncomment
+LoadModule proxy_module modules/mod_proxy.so
+```
+```
+# Uncomment
+LoadModule proxy_http_module modules/mod_proxy_http.so
+```
 * Open `/etc/httpd/conf/extra/httpd-vhosts.conf` and set configuration like this
 ```
 <VirtualHost *:80>
