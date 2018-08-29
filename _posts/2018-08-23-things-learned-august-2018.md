@@ -59,6 +59,9 @@ cp -r src/. dest
 # -> dest/<content>
 ```
 
+### TortoiseHG repository-wide search in history
+Just press `Alt + 3` and select *All history* option.
+
 # 28 August
 
 ### `String.prototype.slice` return value
