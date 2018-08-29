@@ -18,22 +18,25 @@ Include conf/extra/httpd-vhosts.conf
 <VirtualHost *:80>
 	DocumentRoot "/srv/http/localhost"
 
-    ProxyPreserveHost Off
 	<Proxy *>
         Order allow,deny
         Allow from All
     </Proxy>
 
-    ProxyPass "/app-base/api/*" "http://ip-to-external-api/api"
-    ProxyPassReverse "/app-base/api/*" "http://ip-to-external-api/api"
-    ProxyPassReverseCookiePath "*" "/app-base/"
-    ProxyPassReverseCookieDomain "*" "/app-base/"
+    # Requests go from localhost/app-base/api/ to external-ip/app-base/api/
+    <Location "/app-base/api/">
+        ProxyPass "http://ip-to-external-api/app-base/api/"
+        ProxyPassReverse "http://ip-to-external-api/app-base/api/"
+        ProxyPassReverseCookiePath "*" "/app-base/"
+        ProxyPassReverseCookieDomain "*" "/app-base/"
+   		ProxyPreserveHost Off 
+    </Location>
     
     ErrorLog "/var/log/httpd/localhost-app-error_log"
     CustomLog "/var/log/httpd/localhost-app-access_log" common
 </VirtualHost>
 ```
-* Create directory `/srv/http/localhost` and place your application there
+* Create directory `/srv/http/localhost` and place your application there (in the root directory)
 * Run `sudo systemctl restart httpd.service`
 * Open `localhost` in browser
 
