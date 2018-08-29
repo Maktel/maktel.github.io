@@ -48,7 +48,16 @@ Listen 4100
 ```
 * Create directory `/srv/http/localhost` and place your application there (best in root directory, but can be in any other as well)
 * Run `sudo systemctl restart httpd.service`
-* Open `localhost` in browser
+* Open `localhost:4100` in browser
+
+### Copy directory contents
+Use `cp`, but append a dot at the end of the path
+```bash
+cp -r src dest
+# -> dest/src/<content>
+cp -r src/. dest
+# -> dest/<content>
+```
 
 # 28 August
 
