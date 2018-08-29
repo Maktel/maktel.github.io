@@ -51,7 +51,7 @@ Listen 4100
 * Open `localhost:4100` in browser
 
 ### Copy directory contents
-Use `cp`, but append a dot at the end of the source path
+Use `cp`, but append a dot to the source path
 ```bash
 cp -r src dest
 # -> dest/src/<content>
