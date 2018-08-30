@@ -3,6 +3,11 @@ theme: post
 published: true
 title: Things learned – August 2018
 ---
+# 30 August
+
+### `== null` means `=== undefined || === null`
+As stated, [source](http://adripofjavascript.com/blog/drips/equals-equals-null-in-javascript.html)
+
 # 29 August
 
 ### How to create local server with proxy using Apache2
