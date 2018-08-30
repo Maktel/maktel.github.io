@@ -8,6 +8,15 @@ title: Things learned – August 2018
 ### `== null` means `=== undefined || === null`
 As stated, [source](http://adripofjavascript.com/blog/drips/equals-equals-null-in-javascript.html)
 
+### Destructuring nested objects
+You can provide a default value when destructuring objects. Let's say you have a object and you want to extract `city` property:
+```javascript
+// from world.country.province.city we want city
+const {
+  country: { province: { city } } = { province : { city: 'Warsaw' } },
+} = world;
+```
+
 # 29 August
 
 ### How to create local server with proxy using Apache2
