@@ -3,6 +3,20 @@ theme: post
 published: true
 title: Things learned – August 2018
 ---
+# 31 August
+
+### Mercurial accidental push
+```bash
+hg backout -r <revision-number>
+```
+
+### Mercurial accidental local commit
+```bash
+hg strip -r <revision-number>
+```
+
+---
+
 # 30 August
 
 ### `== null` means `=== undefined || === null`
@@ -16,6 +30,8 @@ const {
   country: { province: { city } } = { province : { city: 'Warsaw' } },
 } = world;
 ```
+
+---
 
 # 29 August
 
@@ -76,10 +92,14 @@ cp -r src/. dest
 ### TortoiseHG repository-wide search in history
 Just press `Alt + 3` and select *All history* option.
 
+---
+
 # 28 August
 
 ### `String.prototype.slice` return value
 String method `slice(startIndex[, endIndex])` returns an empty string on invalid parameters like start index greater or equal the length of the string oraz start index greater than end index (except for negative end index that matches position from the end of the string). Providing end index after the end of the string does greedy match for the whole string.
+
+---
 
 # 24 August
 
@@ -97,6 +117,8 @@ module.exports = {
 };
 ```
 I need to think of a way to disable it premanently xD
+
+---
 
 # 23 August
 
