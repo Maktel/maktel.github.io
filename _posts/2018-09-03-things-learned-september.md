@@ -11,6 +11,16 @@ Use key combination `Alt + Print screen`
 ### Navigate through images in gThumb
 Use `Space/Backspace` or `Page Up/Page Down`
 
+### Edit message of an old, draft commit
+Using Mercurial's `histedit` extension:
+```bash
+hg histedit -r <rev>
+# change command preceeding selected commit from pick to mess
+# :wq
+
+# change commit message 
+```
+
 ---
 
 # 4 September
