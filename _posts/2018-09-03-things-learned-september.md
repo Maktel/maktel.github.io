@@ -3,6 +3,16 @@ theme: post
 published: true
 title: Things learned – September
 ---
+# 10 September
+
+### Print screen only one monitor in GNOME
+Use key combination `Alt + Print screen`
+
+### Navigate through images in gThumb
+Use `Space/Backspace` or `Page Up/Page Down`
+
+---
+
 # 4 September
 
 ### `immutability-helper` modify array
