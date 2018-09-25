@@ -3,6 +3,12 @@ theme: post
 published: true
 title: Things learned – September
 ---
+# 25 September
+
+### `Array.reduce(callback, initialValue)` skips first iteration if there is no initial value
+
+---
+
 # 10 September
 
 ### Print screen only one monitor in GNOME
