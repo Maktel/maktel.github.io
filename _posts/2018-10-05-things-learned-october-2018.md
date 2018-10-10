@@ -3,6 +3,18 @@ theme: post
 published: true
 title: Things learned – October 2018
 ---
+# October 10
+
+### Target only Firefox with CSS
+Plays nice with `.scss` `@extend`
+```css
+@supports (-moz-appearance:none) {
+    .HelloWorld { color: red; } 
+}
+```
+
+---
+
 # October 5
 
 ### `package.json` dependencies vs devDependencies
