@@ -3,6 +3,15 @@ theme: post
 published: true
 title: Things learned – October 2018
 ---
+# October 11
+
+### List `git` remotes
+```bash
+git remote -v
+```
+
+---
+
 # October 10
 
 ### Target only Firefox with CSS
