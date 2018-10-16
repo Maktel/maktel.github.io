@@ -3,6 +3,14 @@ theme: post
 published: true
 title: Things learned – October 2018
 ---
+# October 16
+
+### Commit ignored file in git
+
+If you want to include some build files or something that is not related directly to the core code (eg. in server repo you include example web build), you can add files to `.gitignore` like normal and then `git add` them them with `-f` flag that forces ignored files.
+
+---
+
 # October 11
 
 ### List `git` remotes
