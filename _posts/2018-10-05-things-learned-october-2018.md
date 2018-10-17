@@ -3,6 +3,15 @@ theme: post
 published: true
 title: Things learned – October 2018
 ---
+# October 17
+
+## New things in new template
+
+### `ContainerQuery` component
+[react-container-query](https://www.npmjs.com/package/react-container-query) serves the purpose of making the application responsive. It allows passing CSS classes based on widths to component's children, this way making children respond to parent's (container's) size.
+
+---
+
 # October 16
 
 ### Commit ignored file in git
