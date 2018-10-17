@@ -10,6 +10,9 @@ title: Things learned – October 2018
 ### `ContainerQuery` component
 [react-container-query](https://www.npmjs.com/package/react-container-query) serves the purpose of making the application responsive. It allows passing CSS classes based on widths to component's children, this way making children respond to parent's (container's) size.
 
+### Internationalization with `react-intl`
+[https://github.com/yahoo/react-intl](github)
+
 ---
 
 # October 16
