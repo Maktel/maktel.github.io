@@ -5,7 +5,8 @@ title: Things learned – October 2018
 ---
 # October 19
 
-### Remember to 
+### Remember to set automatic screen lock after 5 minutes...
+...when setting up a new Gnome system. It seems like Super+L doesn't always work.
 
 ---
 
