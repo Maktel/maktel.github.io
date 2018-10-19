@@ -11,8 +11,6 @@ title: Things learned – October 2018
 ### Using Typescript support in non-Typescript project (VSCode)
 [Issue that started it all](https://github.com/Microsoft/vscode/issues/39520)
 
-
-
 ---
 
 # October 17
