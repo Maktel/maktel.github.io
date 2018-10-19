@@ -8,6 +8,11 @@ title: Things learned – October 2018
 ### Remember to set automatic screen lock after 5 minutes...
 ...when setting up a new Gnome system. It seems like Super+L doesn't always work.
 
+### Using Typescript support in non-Typescript project (VSCode)
+[Issue that started it all](https://github.com/Microsoft/vscode/issues/39520)
+
+
+
 ---
 
 # October 17
