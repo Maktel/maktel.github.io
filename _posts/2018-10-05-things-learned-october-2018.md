@@ -3,6 +3,12 @@ theme: post
 published: true
 title: Things learned – October 2018
 ---
+# October 19
+
+### Remember to 
+
+---
+
 # October 17
 
 ## New things in new template
@@ -12,6 +18,9 @@ title: Things learned – October 2018
 
 ### Internationalization with `react-intl`
 [https://github.com/yahoo/react-intl](github)
+
+### `react-router`, `react-redux`, and `connected-react-router`
+Using `react-router-config` for configuration in a single place instead of spreading it over the whole application.
 
 ---
 
