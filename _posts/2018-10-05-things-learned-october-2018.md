@@ -3,6 +3,17 @@ theme: post
 published: true
 title: Things learned – October 2018
 ---
+# October 29
+
+### Pretty-print Javascript object
+When passing an object to console or textarea as a text, you can pass parameters to `JSON.stringify` to format output:
+```javascript
+const foo = { bar: 'baz' };
+JSON.stringify(foo, null, 4);
+```
+
+---
+
 # October 19
 
 ### Remember to set automatic screen lock after 5 minutes...
