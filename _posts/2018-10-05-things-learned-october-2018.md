@@ -3,6 +3,20 @@ theme: post
 published: true
 title: Things learned – October 2018
 ---
+# October 31
+
+### Append change to a commited changeset in git
+[so answer](https://stackoverflow.com/questions/2719579/how-to-add-a-changed-file-to-an-older-not-last-commit-in-git/27721031#27721031)
+```
+# stage your changes with git add or through VSC
+git commit --fixup=COMMITYOUWANTTOFIX
+git rebase --interactive --autosquash
+# :wq
+```
+
+
+---
+
 # October 29
 
 ### Pretty-print Javascript object
