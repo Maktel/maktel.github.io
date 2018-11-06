@@ -6,7 +6,7 @@ title: Things learned – November 2018
 # 6 November 
 
 ### Editing old commit in git history
-
+[so](https://stackoverflow.com/a/1186549)
 ```bash
 git rebase --interactive <commit-sha>^
 # choose with 'edit' commit you want to change
