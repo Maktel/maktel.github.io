@@ -33,3 +33,12 @@ proc stagelines {} {
 ```
 
 Now, restart git gui. Select lines you want to stage and press Ctrl+d. You can change keybind to sole d with `<Key-d>`.
+
+### Test if push candidate builds and works
+```bash
+# stash all files, including untracked
+git stash -u
+# check if everything is all right
+git stash pop
+# push and so on...
+```
