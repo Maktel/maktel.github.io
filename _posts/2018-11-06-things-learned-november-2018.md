@@ -15,3 +15,21 @@ git rebase --interactive <commit-sha>^
 git commit --all --amend --no-edit
 git rebase --continue
 ```
+
+### Stage lines with keyboard shortcut in git-gui
+[so](https://stackoverflow.com/questions/32661397/is-there-a-keyboard-shortcut-for-stage-lines-in-git-gui)
+```bash
+sudo gedit /usr/lib/git-core/git-gui
+```
+
+At the end of the file add
+```
+bind .   <$M1B-Key-d> stagelines
+
+proc stagelines {} {
+    apply_range_or_line %X %Y
+    do_rescan
+}
+```
+
+Now, restart git gui. Select lines you want to stage and press Ctrl+d. You can change keybind to sole d with `<Key-d>`.
