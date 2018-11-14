@@ -3,6 +3,15 @@ theme: post
 published: true
 title: Things learned – November 2018
 ---
+# 15 November 
+
+### Process files in batch with `ffmpeg`
+Following snippet converts all `.avi` files to `mp4`. `${f%.*}` files name without extension.
+```bash
+for f in $(ls *.avi); do ffmpeg -i $f ${f%.*}.mp4; done
+```
+---
+
 # 6 November 
 
 ### Editing old commit in git history
