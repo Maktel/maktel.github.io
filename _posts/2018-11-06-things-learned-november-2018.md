@@ -3,6 +3,15 @@ theme: post
 published: true
 title: Things learned – November 2018
 ---
+# 16 November
+
+### Gnome-shell extension development notes
+```
+journalctl -f # for logs
+```
+
+---
+
 # 15 November 
 
 ### Process files in batch with `ffmpeg`
