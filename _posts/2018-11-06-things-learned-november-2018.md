@@ -6,9 +6,16 @@ title: Things learned – November 2018
 # 16 November
 
 ### Gnome-shell extension development notes
-```
+```bash
 journalctl -f # for logs
 ```
+```javascript
+const ByteArray = imports.byteArray;
+
+ByteArray.toString(/* output from shell command*/);
+```
+
+[gjs](https://github.com/GNOME/gjs)
 
 ---
 
