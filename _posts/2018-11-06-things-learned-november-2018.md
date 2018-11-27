@@ -3,6 +3,13 @@ theme: post
 published: true
 title: Things learned – November 2018
 ---
+# 22 November
+
+### Apply git stash without dropping it
+
+Use `git stash apply` instead of `git stash pop`. Pop is like `git stash apply && git stash drop`.
+
+
 # 16 November
 
 ### Gnome-shell extension development notes
