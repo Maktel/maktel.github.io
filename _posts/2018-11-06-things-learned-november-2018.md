@@ -5,8 +5,9 @@ title: Things learned – November 2018
 ---
 # 27 November
 
-### Class fields proposal – order of fields matters
+### Class fields proposal -- order of fields matters
 I have not encountered problems with function class fields in Javascript's class fields proposal when using babel plugin. But when you try to use property class fields (like `state` in React), if you use shorthand notation instead of constructor, you have to define methods you are going to call before they are used.
+
 ```javascript
 // This won't work properly
 state = { f: this.foo() };
