@@ -3,6 +3,24 @@ theme: post
 published: true
 title: Things learned – November 2018
 ---
+# 28 November
+
+### Override regular class name from css-module file
+```scss
+.randomisedModuleClassName {
+  > :global(.global-class-name) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  ::before {
+    display: none;
+  }
+}
+```
+
+---
+
 # 27 November
 
 ### Class fields proposal -- order of fields matters
