@@ -6,6 +6,7 @@ title: Things learned – November 2018
 # 28 November
 
 ### Override regular class name from css-module file
+[Relevant SO question](https://stackoverflow.com/questions/39805537/how-to-apply-global-styles-with-css-modules-in-a-react-app)
 ```scss
 .randomisedModuleClassName {
   > :global(.global-class-name) {
