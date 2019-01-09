@@ -3,7 +3,9 @@ theme: post
 published: true
 title: Things learned – January 2019
 ---
-# Code-splitting using `React.lazy()`
+# January 9
+
+### Code-splitting using `React.lazy()`
 
 ```jsx
 // import
