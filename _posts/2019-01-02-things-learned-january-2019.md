@@ -3,6 +3,22 @@ theme: post
 published: true
 title: Things learned – January 2019
 ---
+# Code-splitting using `React.lazy()`
+
+```jsx
+// import
+// can make lambda async and use await for things like sleep()
+const ComponentName = React.lazy(() => import('./FileNameWithDefaultExport'));
+
+
+// usage in render
+<React.Suspense fallback={<Spin />}>
+  <ComponentName />
+</React.Suspense>
+```
+
+---
+
 # January 3
 
 ### `position: fixed` won't work when CSS filters are applied in parent
