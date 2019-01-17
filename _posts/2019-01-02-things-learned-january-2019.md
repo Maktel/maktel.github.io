@@ -5,12 +5,46 @@ title: Things learned – January 2019
 ---
 # January 17
 
+### Prevent re-renders because of arrow functions
+
+Old:
+```jsx
+// in render()
+fields.map(fieldId => <Button onClick={this.removeField(fieldId)} />)
+```
+
+New:
+```jsx
+// in render()
+<RemoveFieldButton
+  fieldId={fieldId}
+  removeField={this.removeField}
+/>
+
+// outside rendering class
+class RemoveEnvironmentButton extends React.PureComponent {
+	handleOnClick = () => {
+		const { removeField, fieldId } = this.props;
+
+		removeField(fieldId);
+	};
+
+	render() {
+		return (
+			<Button onClick={this.handleOnClick}>
+				Remove field
+			</Button>
+		);
+	}
+}
+```
+
 ### ESLint rule to disallow binds in `render`
 
 ```json
-	"react/jsx-no-bind": [
-				1
-			]
+"react/jsx-no-bind": [
+  1
+]
 ```
 
 ---
