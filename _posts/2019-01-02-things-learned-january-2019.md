@@ -3,6 +3,18 @@ theme: post
 published: true
 title: Things learned – January 2019
 ---
+# January 17
+
+### ESLint rule to disallow binds in `render`
+
+```json
+	"react/jsx-no-bind": [
+				1
+			]
+```
+
+---
+
 # January 9
 
 ### Code-splitting using `React.lazy()`
