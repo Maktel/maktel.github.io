@@ -3,6 +3,33 @@ theme: post
 published: true
 title: Things learned – January 2019
 ---
+# January 30
+
+### Prevent re-renders because of arrow functions v2
+
+Shorter way, maybe hooks will provide something even better
+
+```jsx
+// in render()
+<RemoveFieldButton
+  fieldId={fieldId}
+  removeField={this.removeField}
+/>
+
+// outside rendering class
+class RemoveEnvironmentButton extends React.PureComponent {
+	removeField = () => { this.props.removeField(this.props.ldapLogin); };
+
+	render() {
+		return (
+			<Button onClick={this.removeField}>
+				Remove field
+			</Button>
+		);
+	}
+}
+```
+
 # January 17
 
 ### Prevent re-renders because of arrow functions
