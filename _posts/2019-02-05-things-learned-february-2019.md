@@ -51,7 +51,7 @@ Add new dependency: `typescript`
 }
 ```
 
-`src/global.d.ts` for Sass modules support ([https://stackoverflow.com/questions/51038522/how-to-import-scss-file-as-variable-in-react-with-typescript](SO)):
+`src/global.d.ts` for Sass modules support ([SO](https://stackoverflow.com/questions/51038522/how-to-import-scss-file-as-variable-in-react-with-typescript)):
 ```ts
 declare module '*.scss' {
   const content: {[className: string]: string};
@@ -65,7 +65,7 @@ declare module '*.scss' {
 
 ### Component re-renders instead of remounting on path change in `react-router`
 
-(https://stackoverflow.com/a/49441836)[SO answer]
+[SO answer](https://stackoverflow.com/a/49441836)
 
 ```jsx
 // entry in react-router-config
