@@ -25,7 +25,7 @@ Add new dependency: `typescript`
 }
 ```
 
-`tsconfig.json` enables Typescript support:
+`tsconfig.json` enables Typescript support (https://stackoverflow.com/questions/51038522/how-to-import-scss-file-as-variable-in-react-with-typescript)[SO]:
 
 ```json
 {
