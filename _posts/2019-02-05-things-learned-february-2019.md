@@ -9,7 +9,7 @@ title: Things learned – February 2019
 
 Add new dependency: `typescript`
 
-`devDependencies` for types:
+`devDependencies` for types (although watch for versions!):
 
 ```json
 {
