@@ -3,6 +3,19 @@ theme: post
 published: true
 title: Things learned – February 2019
 ---
+# 7 February
+
+### Convert `Map<K, V>` keys to an array
+
+[SO answer](https://stackoverflow.com/a/35341828)
+
+```js
+const m = new Map();
+const keys = Array.from(m.keys());
+```
+
+---
+
 # 6 February
 
 ### Adding Typescript support
