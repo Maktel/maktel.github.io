@@ -5,6 +5,17 @@ title: Things learned – February 2019
 ---
 # 7 February
 
+### Casting
+
+[SO answer](https://stackoverflow.com/questions/37613981/how-to-use-a-typescript-cast-with-jsx-tsx)
+
+```typescript
+const x = <any> foo;
+// is equivalent to:
+const x = foo as any;
+// but avoids conficts with JSX
+```
+
 ### Convert `Map<K, V>` keys to an array
 
 [SO answer](https://stackoverflow.com/a/35341828)
