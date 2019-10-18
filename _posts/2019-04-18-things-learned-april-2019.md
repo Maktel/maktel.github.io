@@ -3,6 +3,14 @@ theme: post
 published: true
 title: Things learned – April 2019
 ---
+# 18 October
+
+### Fix BT profile
+
+https://askubuntu.com/questions/863930/bluetooth-headset-cant-set-a2dp-high-fidelity-playback-poor-sound-quality
+
+---
+
 # 9 May
 
 ### `target` vs `currentTarget` on event
@@ -28,3 +36,4 @@ chmod +x
 # use as
 ./gnomeshell-extension-manage --version latest --extension-id 19 --install
 ```
+
