@@ -5,8 +5,13 @@ title: '[pl] Recipies'
 ---
 # Generator obiadu
 
+<button id="generate" type="button">Wylosuj</button>
+<div id="result"></div>
 <script>
-	console.log('Hello world :)');
+	document.getElementById('generate').addEventListener('click', function(e) {
+    	const node = document.getElementById('result');
+        node.innerHTML = 'Zobaczymy, co będzie w promocji';
+    });
 </script>
 
 ---
