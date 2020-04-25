@@ -3,6 +3,16 @@ theme: post
 published: true
 title: '[pl] Recipies'
 ---
+# Generator obiadu
+
+<script>
+	console.log('Hello world :)');
+</script>
+
+---
+
+# Przepisy
+
 ## Ciasto na pizzę ([source](https://www.zajadam.pl/pizza/pizza-wegetarianska))
 
 ### Składniki
