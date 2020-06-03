@@ -74,22 +74,20 @@ title: '[pl] Recipies'
 
 ---
 
-<details>
-	<summary>Carbonara</summary>
-  
-	### Składniki
-	- 200 g makaronu spaghetti
-	- 100 g boczku
-	- 2 jajka
-	- 100 g słodkiej, płynnej śmietanki 30%
-	- 30 g startego sera Pecorino (Parmezanu lub Grana Padano) + trochę do posypania 
-	- sól, pieprz
+## Carbonara 
 
-	### Przygotowanie
-	1. Makaron ugotować w osolonej wodzie, według przepisu na opakowaniu. Odcedzić. Przelać wodą. 
-	2. Boczek pokroić w drobną kostkę. Podsmażyć na patelni na niskiej mocy palnika, aż się lekko zarumieni. (Jeśli boczek jest bardzo chudy, dodać łyżkę oleju). 
-	3. Śmietankę, jajka, ser, szczyptę soli i dość dużą ilość pieprzu przełożyć do miski (najlepiej wysokiej i wąskiej) i zmiksować blenderem. 
-	4. Ugotowany makaron dodać do gorącego boczku. Przesmażyć, mieszając przez ok. 1 minutę. Patelnię ściągnąć z palnika, dodać masę jajeczną i wymieszać. Mieszać z chwilę, aż wszystkie składniki dobrze się połączą, a sos lekko zgęstnieje. (Lepiej nie mieszać na palniku, żeby nie zrobiła się jajecznica!).
-	5. Wyłożyć na talerze i posypać resztą startego sera. 
+### Składniki
+- 200 g makaronu spaghetti
+- 100 g boczku
+- 2 jajka
+- 100 g słodkiej, płynnej śmietanki 30%
+- 30 g startego sera Pecorino (Parmezanu lub Grana Padano) + trochę do posypania 
+- sól, pieprz
 
-</details>
+### Przygotowanie
+
+1. Makaron ugotować w osolonej wodzie, według przepisu na opakowaniu. Odcedzić. Przelać wodą. 
+2. Boczek pokroić w drobną kostkę. Podsmażyć na patelni na niskiej mocy palnika, aż się lekko zarumieni. (Jeśli boczek jest bardzo chudy, dodać łyżkę oleju). 
+3. Śmietankę, jajka, ser, szczyptę soli i dość dużą ilość pieprzu przełożyć do miski (najlepiej wysokiej i wąskiej) i zmiksować blenderem. 
+4. Ugotowany makaron dodać do gorącego boczku. Przesmażyć, mieszając przez ok. 1 minutę. Patelnię ściągnąć z palnika, dodać masę jajeczną i wymieszać. Mieszać z chwilę, aż wszystkie składniki dobrze się połączą, a sos lekko zgęstnieje. (Lepiej nie mieszać na palniku, żeby nie zrobiła się jajecznica!).
+5. Wyłożyć na talerze i posypać resztą startego sera. 
