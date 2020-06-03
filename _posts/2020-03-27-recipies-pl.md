@@ -77,7 +77,6 @@ title: '[pl] Recipies'
 <details>
 	<summary>Carbonara</summary>
   
-
 	### Składniki
 	- 200 g makaronu spaghetti
 	- 100 g boczku
