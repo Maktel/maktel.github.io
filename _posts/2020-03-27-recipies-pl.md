@@ -74,6 +74,29 @@ title: '[pl] Recipies'
 
 ---
 
+## Maxi King ([source](https://www.o2.pl/informacje/przepis-na-cisto-maxi-king-proste-i-bez-pieczenia-6546606170761920a))
+
+### Składniki
+- 600 ml śmietanki 30%
+- 250 g mascarpone
+- puszka kajmaku
+- 3 łyżki cukru
+- opakowanie cukru wanilinowego
+- czekolada mleczna
+- herbatniki
+- starte nerkowce do posypania
+
+### Przygotowanie
+1. Śmietankę ubij z dodatkiem cukru i cukru wanilinowego na sztywną pianę
+2. Dodaj mascarpone i jeszcze przez chwilę ubijaj
+3. Połowę tak przygotowanej masy wyłóż na blaszkę wyłożoną wcześniej herbatnikami
+4. Śmietanę polej wygotowanym wcześniej i ostudzonym kajmakiem
+5. Dodaj resztę bitej śmietany
+6. Wierzch ciasta polej roztopioną wcześniej czekoladą (najlepiej, aby nie była już ciepła), całość posyp startymi orzechami. Należy uważać, aby nie rozlewać czekolady w grube grudki, ponieważ ciężko będzie ją później pokroić, a takie kawałki źle się je. Lepsza jest drobna kratownica.
+7. Schłodź ciasto w lodówce ok. godziny lub ok 15 minut w zamrażalniku 
+
+---
+
 ## Carbonara 
 
 ### Składniki
@@ -90,4 +113,4 @@ title: '[pl] Recipies'
 2. Boczek pokroić w drobną kostkę. Podsmażyć na patelni na niskiej mocy palnika, aż się lekko zarumieni. (Jeśli boczek jest bardzo chudy, dodać łyżkę oleju). 
 3. Śmietankę, jajka, ser, szczyptę soli i dość dużą ilość pieprzu przełożyć do miski (najlepiej wysokiej i wąskiej) i zmiksować blenderem. 
 4. Ugotowany makaron dodać do gorącego boczku. Przesmażyć, mieszając przez ok. 1 minutę. Patelnię ściągnąć z palnika, dodać masę jajeczną i wymieszać. Mieszać z chwilę, aż wszystkie składniki dobrze się połączą, a sos lekko zgęstnieje. (Lepiej nie mieszać na palniku, żeby nie zrobiła się jajecznica!).
-5. Wyłożyć na talerze i posypać resztą startego sera. 
+5. Wyłożyć na talerze i posypać resztą startego sera.
