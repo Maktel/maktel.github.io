@@ -24,3 +24,5 @@ nextStart.nextStart([]);
 ## Integration with git
 
 TODO: https://wiki.mydevil.net/Git
+- dependency install must be configured
+- next run build must be configured
