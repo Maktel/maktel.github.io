@@ -20,7 +20,7 @@ nextStart.nextStart([]);
 ```
 
 4. Run `npm ci` to install all dependencies.
-5. Run `next run build` to prepare production release of your application.
+5. Run `npm run build` to prepare production release of your application.
 6. (optional) Restart the application: `devil www restart domain-name`.
 
 ## Integration with git
